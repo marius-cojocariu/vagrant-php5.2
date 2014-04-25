@@ -5,7 +5,11 @@ Simple vagrant box with deploy script for apache, php 5.2.17, mysql and phpmyadm
 
 This will install a vagrant development environment with php version 5.2.17 that can be activated on demand. It downloads a special prepared deb file and php.ini from dropbox. Do not use it in production.
 
-The default php version is the system package one (php 5.3.~). To activate the old version, add ```Include php52.conf``` in the ```<VirtualHost>``` definition of any sites that should use it (the default one is at ```/etc/apache2/sites-available/default```).
+The default php version is the system package one (php 5.3.~). To activate the old version, add 
+```
+Include php52.conf
+``` 
+in the ```<VirtualHost>``` definition of any sites that should use it (the default one is at ```/etc/apache2/sites-available/default```).
 
 Of course, php 5.2 is no longer supported and is a security risk.
 
