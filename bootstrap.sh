@@ -17,8 +17,8 @@
 /usr/bin/debconf-set-selections <<< 'phpmyadmin phpmyadmin/mysql/app-pass password asd123'
 /usr/bin/apt-get install -y phpmyadmin
 
-/usr/bin/wget https://dl.dropboxusercontent.com/u/27487366/debs/ubuntu12.04/php5.2.17/php_5.2.17-1_amd64.deb
-/usr/bin/wget https://dl.dropboxusercontent.com/u/27487366/debs/ubuntu12.04/php5.2.17/php.ini-recommended
+/usr/bin/wget https://github.com/marius-cojocariu/vagrant-php5.2/releases/download/1.0.0/php_5.2.17-1_amd64.deb
+/usr/bin/wget https://github.com/marius-cojocariu/vagrant-php5.2/releases/download/1.0.0/php.ini-recommended
 /usr/bin/dpkg -i /home/vagrant/php_5.2.17-1_amd64.deb
 /usr/bin/apt-get install -f -y
 
